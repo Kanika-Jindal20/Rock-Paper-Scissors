@@ -35,7 +35,7 @@ body{
         background-position:center;
         background-image: url("images/headT.png");
         background-size:contain;
-
+        background-repeat: no-repeat;
     }
     #btn{
         width:220px;
