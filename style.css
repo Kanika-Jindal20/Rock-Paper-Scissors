@@ -247,7 +247,7 @@ body{
 /* mobile */
 @media (max-width:768px){
     .head{
-        height: 700px;
+        height: 10px;
         background-image: none;
     }
     .game-area{
