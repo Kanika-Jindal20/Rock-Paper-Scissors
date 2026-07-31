@@ -6,7 +6,7 @@ A fun and interactive **Rock Paper Scissors** game built using **HTML, CSS, and 
 
 ## 🚀 Live Demo
 
-🔗 https://github.com/Kanika-Jindal20/Rock-Paper-Scissors.git
+🔗 https://Kanika-Jindal20.github.io/Rock-Paper-Scissors.git
 
 ---
 
