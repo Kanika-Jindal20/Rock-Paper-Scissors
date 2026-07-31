@@ -247,8 +247,7 @@ body{
 /* mobile */
 @media (max-width:768px){
     .head{
-        height: 10px;
-        background-image: none;
+        display: none;
     }
     .game-area{
         flex-direction:column;
