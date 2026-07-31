@@ -248,9 +248,7 @@ body{
 @media (max-width:768px){
     .head{
         height: 700px;
-        background-image: url("images/head1M.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-image: none;
     }
     .game-area{
         flex-direction:column;
