@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+body{
+    background: linear-gradient(to bottom,#7ee5f8,#aee3ec);
+    min-height:100vh;
+}
+.head{
+    height:220px;
+    background-image: url("images/head1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-area{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:60px;
+    margin-top:30px;
+}
+.player-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-section h2{
+    font-size: 32px;
+    margin-bottom : 20px;
+    color: #003366;
+}
+
+.choices{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.choice{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+}
+.choice img, .computer-choices img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+.choice:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.computer-choices{
+    display:flex;
+    gap:20px;
+}
+.computer-choices img{
+    height: 140px;
+    width: 140px;
+}
+
+.match-box{
+    margin-top:20px;
+    text-align:center;
+}
+.match-box p:first-child{
+    font-size:20px;
+    font-weight:bold;
+    color:#003366;
+}
+#user-match,#comp-match{
+    font-size:40px;
+    color:#004aad;
+    font-weight: bold;
+}
+
+.battle-section{
+    width:320px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:60px;
+    border : 2px transparent black;
+}
+.battle-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    min-height: 140px;
+}
+#user-img,#comp-img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: none;
+}
+#vs{
+    font-size:35px;
+    font-weight:bold;
+    color:#000;
+    display:none;
+}
+
+.score-board{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap : 150px;
+    font-size:30px;
+}
+#user-score,#comp-score{
+    font-size: 50px;
+}
+
+.reset-container{
+    margin-top:20px;
+    text-align:center;
+}
+#reset-btn{
+    padding:12px 28px;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    border-radius:10px;
+    background:#004aad;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+#reset-btn:hover{
+    background:#00317a;
+    transform:scale(1.05);
+}
+
+
+.msg-container{
+    margin-top:10px;
+}
+#msg{
+    background-color: #0d85bd;
+    font-size:40px;
+    display: inline-block;
+    padding:15px 40px;
+    border-radius: 50px;
+}
+
+.popup{
+    position: fixed;
+    inset:0;
+    background: rgba(0,0,0,.6);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index:1000;
+}
+.popup-content{
+    background: white;
+    width:420px;
+
+    border-radius: 20px;
+    padding: 35px;
+    text-align: center;
+    animation: pop .4s ease;
+}
+.popup-content h1{
+    background:#0d85bd;
+    margin-bottom: 10px;
+}
+.popup-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.popup-content button{
+    padding: 12px 28px;
+    font-size : 18px;
+    border:none;
+    border-radius: 10px;
+    background: #0d85bd;
+    color:white;
+    cursor:pointer;
+}
+@keyframes popup{
+    from{
+        transform:scale(.5);
+        opacity: 0;
+    }
+    to{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+/* tablet */
+@media (max-width : 1024px){
+    .game-area{
+        gap:45px;
+    }
+    .player-section h2{
+        font-size: 26px;
+    }
+    .choice, .computer-choices img{
+        width: 100px;
+        height: 100px;
+    }
+    #user-match, #comp-match{
+        font-size: 32px;
+    }
+    .battle-section{
+        width: 200px;
+    }
+    .battle-result{
+        gap: 15px;
+        min-height: 100px;
+    }
+    #user-img, #comp-img{
+        width: 70px;
+        height: 70px;
+    }
+    #vs{
+        font-size: 27px;
+    }
+    .score-board{
+        gap: 80px;
+    }
+    #msg{
+        font-size: 28px;
+        padding: 12px 30px;
+    }
+}
+
+/* mobile */
+@media (max-width:768px){
+    .head{
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .game-area{
+        flex-direction:column;
+        align-items:center;
+        gap:35px;
+    }
+    .battle-section{
+        order:2;
+        margin-top:2px;
+    }
+    .player-section:first-child{
+        order:1;
+    }
+    .player-section:last-child{
+        order:3;
+    }
+    .choices, .computer-choices{
+        gap:15px;
+    }
+    .choice{
+        width:100px;
+        height:100px;
+    }
+    .computer-choices img{
+        width:100px;
+        height:100px;
+    }
+    .score-board{
+        gap:50px;
+        font-size:22px;
+    }
+    #user-score,
+    #comp-score{
+        font-size:40px;
+    }
+    #msg{
+        width:90%;
+        font-size:22px;
+        padding:12px;
+        border-radius:20px;
+    }
+    .popup-content{
+        width:90%;
+        padding:25px;
+    }
+}

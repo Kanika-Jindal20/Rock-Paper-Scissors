@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAY !!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head"></div>
+    </header>
+    <div class = "game-area">
+        <div class= "player-section">
+            <h2>PLAYER 1 (YOU)</h2>
+            <div class="choices">
+                <div class="choice" id="rock">
+                    <img src="images/rock.png">
+                </div>
+                <div class="choice" id="paper">
+                    <img src="images/paper.png">
+                </div>
+                <div class="choice" id="scissors">
+                    <img src="images/scissors.png">
+                </div>
+            </div>
+            <div class="match-box">
+                <p>Matches Won</p>
+                <p id="user-match">0</p>
+            </div>
+        </div>
+        <div class="battle-section">
+            <div class ="battle-result">
+                <img id="user-img" src="" alt="your choice">
+                <span id="vs">VS</span>
+                <img id="comp-img" src="" alt="comp choice">
+            </div>
+        </div>
+        <div class="player-section">
+            <h2>PLAYER 2</h2>
+            <div class="choices computer-choices">
+                <img src="images/rock.png">
+                <img src="images/paper.png">
+                <img src="images/scissors.png">
+            </div>
+            <div class="match-box">
+                <p>Matches Won</p>
+                <p id="comp-match">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+    
+    <div class="reset-container">
+        <button id="reset-btn">Reset Statistics</button>
+    </div>
+
+    <div class="msg-container">
+        <p id="msg"><i>Play your move.</i></p>
+    </div>
+
+    <div id = "winner-popup" class="popup">
+        <div class="popup-content">
+            <h1 id="popup-title">YOU WON!</h1>
+            <p id="popup-message"></p>
+
+            <button id="play-again" type="button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
