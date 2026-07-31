@@ -26,3 +26,39 @@ body{
     color: #004aad ;
     cursor: pointer;
 }
+
+/* Tablet */
+@media (max-width:1024px){
+    .header{
+        height:850px;
+        background-position:center;
+        background-image: url("images/headT.png");
+        background-size:cover;
+    }
+    #btn{
+        width:220px;
+        height:50px;
+        font-size:18px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    .header{
+        height:830px;
+        background-image: url("images/headM.png");
+        background-position:center;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .play{
+        margin-top:25px;
+    }
+    #btn{
+        width:180px;
+        height:45px;
+        font-size:16px;
+    }
+}

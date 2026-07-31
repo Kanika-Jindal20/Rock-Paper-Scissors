@@ -203,6 +203,10 @@ body{
 
 /* tablet */
 @media (max-width : 1024px){
+    .head{
+        height: 500px;
+        background-image: url("images/head1T.png");
+    }
     .game-area{
         gap:45px;
     }
@@ -242,8 +246,9 @@ body{
 /* mobile */
 @media (max-width:768px){
     .head{
-        height: 80px;
-        background-size: contain;
+        height: 700px;
+        background-image: url("images/head1M.png");
+        background-size: cover;
         background-repeat: no-repeat;
     }
     .game-area{
