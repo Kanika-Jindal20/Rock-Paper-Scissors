@@ -202,7 +202,7 @@ body{
 }
 
 /* tablet */
-@media (max-width : 1024px){
+@media (max-width : 1px){
     .head{
         height: 500px;
         background-image: url("images/head1T.png");
@@ -213,6 +213,9 @@ body{
     }
     .player-section h2{
         font-size: 26px;
+    }
+    .choices{
+        flex-direction: column;
     }
     .choice, .computer-choices img{
         width: 100px;
@@ -245,7 +248,7 @@ body{
 }
 
 /* mobile */
-@media (max-width:768px){
+@media (max-width:767px){
     .head{
         display: none;
     }
@@ -266,6 +269,7 @@ body{
     }
     .choices, .computer-choices{
         gap:15px;
+        flex-direction: row;
     }
     .choice{
         width:100px;
