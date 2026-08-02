@@ -202,7 +202,7 @@ body{
 }
 
 /* tablet */
-@media (max-width : 1px){
+@media (max-width : 1447px){
     .head{
         height: 500px;
         background-image: url("images/head1T.png");
