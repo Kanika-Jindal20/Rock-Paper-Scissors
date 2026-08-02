@@ -29,6 +29,9 @@ body{
 
 /* Tablet */
 @media (max-width:1024px){
+    body{
+        background: #00aaff;
+    }
     .header{
         width:100%;
         height:100vh;
@@ -51,14 +54,14 @@ body{
         background: #00aaff;
     }
     .header{
-        height:830px;
+        height:600px;
         background-image: url("images/headM.png");
         background-position:center;
         background-size:contain;
         background-repeat: no-repeat;
     }
     .play{
-        margin-top:25px;
+        margin-top: 5px;
     }
     #btn{
         width:180px;
